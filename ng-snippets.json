@@ -1,0 +1,39 @@
+{
+	"Angular Container": {
+		"prefix": "ng-container",
+		"description": "Angular container",
+		"body": [
+			"import { Component, OnInit } from '@angular/core';",
+			"",
+			"@Component({",
+			"\tselector: '${1:selector-name}',",
+			"\ttemplate: `",
+			"\t`",
+			"})",
+			"",
+			"export class ${2:Name}Container implements OnInit {",
+			"\tconstructor() { }",
+			"",
+			"\tngOnInit() { }$0",
+			"}"
+		]
+	},
+	"Angular presentational Component": {
+		"prefix": "ng-presentational",
+		"description": "Angular presentational component",
+		"body": [
+			"import { Component, Input } from '@angular/core';",
+			"",
+			"@Component({",
+			"\tselector: '${1:selector-name}',",
+			"\ttemplate: `",
+			"\t`",
+			"\tstyleUrls: ['./${1:selector-name}.scss'],",
+			"})",
+			"",
+			"export class ${2:Name}Component {",
+			"\t@Input() input: type;",
+			"}"
+		]
+	}
+}
